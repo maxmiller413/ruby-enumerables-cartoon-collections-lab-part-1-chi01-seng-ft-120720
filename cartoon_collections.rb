@@ -9,12 +9,11 @@ def greet_characters(array)
   # Print a custom greeting for each element
 end
 
-require 'pry'
+
 
 def list_dwarves(array)
   array.each_with_index do |element , index|
-binding.pry 
-    array[element] = index
+    array[element] = index.to_i 
   end 
   # Use `each_with_index` to enumerate over the provided array
   #
