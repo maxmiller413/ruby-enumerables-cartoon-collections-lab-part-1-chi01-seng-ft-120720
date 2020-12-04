@@ -1,4 +1,6 @@
-require 'pry'def greet_characters(array)
+require 'pry'
+
+def greet_characters(array)
  array.each do |element|
    puts "Hello #{element}!"
  end
@@ -9,7 +11,8 @@ end
 
 def list_dwarves(array)
   array.each_with_index do |element , index|
-    binding.pry puts "#{array[element] = index}"
+    binding.pry 
+    puts "#{array[element] = index}"
     array
   end 
   # Use `each_with_index` to enumerate over the provided array
